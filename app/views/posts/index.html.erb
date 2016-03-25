@@ -1,0 +1,52 @@
+<div class="container-main container p-t-3 p-b-3">
+
+  <div class="row">
+    <div class="col-xs-12 col-md-8">
+
+      <h1>All Posts / News</h1>
+
+      <% @posts.each do |post| %>
+
+        <article class="row p-b-2">
+          <div class="col-xs-12">
+            <%= image_tag '' %>
+            <h3><%= link_to post.title, post_path(post), class: "" %></h3>
+            <div><%= post.content.html_safe %></div>
+            <div class="pull-right"><i class="fa fa-clock-o"></i> <%= post.created_at %></div>
+          </div>
+        </article>
+
+      <% end %>
+
+     <!--  <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>User</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @posts.each do |post| %>
+            <tr>
+              <td><%= post.title %></td>
+              <td><%= post.content %></td>
+              <td><%= post.user %></td>
+              <td><%= link_to 'Show', post %></td>
+              <td><%= link_to 'Edit', edit_post_path(post) %></td>
+              <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table> -->
+
+      <br>
+
+
+      <%= link_to 'New Post', new_post_path %>
+
+    </div>
+  </div>
+</div>

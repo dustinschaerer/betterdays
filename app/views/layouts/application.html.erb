@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="ROBOTS" content="NOODP" />
+
+  <title>Better Days BBQ - Smyrna, Tennessee</title>
+  <%= stylesheet_link_tag :application, media: "all" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="<%= body_class %>">
+
+
+  <%= render 'layouts/header2' %>
+  <div id="flash">
+    <%= render 'layouts/messages' %>
+  </div>
+
+  <div class="wrapper">
+    <%= yield %>
+  </div>
+
+  <%= render 'layouts/footer' %>
+
+
+ <!--  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p> -->
+</body>
+</html>

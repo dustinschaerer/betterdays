@@ -1,0 +1,63 @@
+<div class="container-fluid container-main">
+  <div class="row" style="border-bottom: solid 2px #D92329;">
+    <div class="col-sm-6 col-md-3 no-gutter">
+      <%= image_tag 'pork-sammy.jpg', class: "img-responsive" %>
+    </div>
+    <div class="col-sm-6 col-md-3 no-gutter">
+      <%= image_tag 'pulled.jpg', class: "img-responsive" %>
+    </div>
+    <div class="col-sm-6 col-md-3 no-gutter">
+      <%= image_tag 'ribs.jpg', class: "img-responsive" %>
+    </div>
+    <div class="col-sm-6 col-md-3 no-gutter">
+      <%= image_tag 'pulled.jpg', class: "img-responsive" %>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="row p-t-2">
+
+      <div class="col-md-9">
+        <div class="jumbotron">
+          <h1>Better Days BBQ - Smyrna, TN</h1>
+          <p>We specialize in mouth-watering slow-smoked barbecue at prices that cannot be beat! Established in 2015, Better Days BBQ is quickly becoming the go-to spot for takeout BBQ done right, every time, in Smyrna, Tennessee. </p>
+          <p><b>Better BBQ</b> at <b>Better Prices</b> means <b>Better Days!</b></p>
+        </div>
+        <h2 class="p-t-3" style="color: #000;">Recent News / Events</h2>
+
+        <% @posts.each do |post| %>
+          <article class="row p-b-2">
+            <div class="col-xs-12">
+              <h3><%= link_to post.title, post_path(post), class: "" %></h3>
+              <div><%= link_to post.content.html_safe %></div>
+              <div class="pull-right"><i class="fa fa-clock-o"></i> <%= post.created_at %></div>
+            </div>
+          </article>
+        <% end %>
+      </div>
+
+      <div class="col-md-3">
+        <h2> (615) 713-6039</h2>
+        <p>11469 Old Nashville Hwy<br>Smyrna, TN 37167</p>
+        <h2>Current Specials</h2>
+        <p>Better Half-Pound Pulled Pork Sandwich - $4</p>
+        <h2>Party Orders and Events</h2>
+        <p>Let us provide the food for your next event or party. Give us a call, (615) 713-6039, or <a href="mailto:">send us an email</a> for pricing or to learn more.</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+      </div>
+      <div class="col-sm-6 col-md-3">
+      </div>
+      <div class="col-sm-6 col-md-3">
+      </div>
+      <div class="col-sm-6 col-md-3">
+      </div>
+    </div>
+
+  </div>
+</div>
