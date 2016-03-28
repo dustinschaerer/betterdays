@@ -23,9 +23,13 @@
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 50px 10px;
-    font-size: 26px;
+    padding: 35px 10px;
+    font-size: 22px;
+    &:hover{
+      text-shadow: none;
+    }
   }
+
 }
 
 .bg-gray {
