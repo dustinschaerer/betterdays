@@ -1,11 +1,17 @@
 
   <nav class="navbar navbar-full navbar-fixed-top affix-top navbar-light" style="background-color: #D92329;" data-spy="affix" data-offset-top="132" id="main-nav">
     <div class="container-fluid">
-      <div class="row hidden-sm-down">
+      <div class="navbar-header">
+        <a class="nav-link pull-left hidden-md-up" href="/" id="bdbbq-logo"><%= image_tag 'bdbbq-logo-100.png' %></a>
+        <button type="button" class="navbar-toggler hidden-md-up collapsed pull-right" data-toggle="collapse" data-target="#collapsingNavbar"> <span class="sr-only">Toggle navigation</span> &#9776;</span> </button>
+      </div>
+
+      <!-- <div class="row collapse navbar-toggleable-xs" id="collapsingNavbar"> -->
+      <div class="row collapse navbar-toggleable-xs" id="">
         <div class="col-sm-5">
           <ul class="nav navbar-nav pull-left">
             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/to-go-orders">To-Go Orders</a></li>
+            <li class="nav-item"><a class="nav-link" href="/to_go_orders">To-Go Orders</a></li>
             <li class="nav-item"><%= link_to "Menu", '/menu', class: 'nav-link' %></li>
           </ul>
         </div>
@@ -20,9 +26,53 @@
           </ul>
         </div>
       </div>
+
+      <div class="row mobile-menu" >
+      <ul class="nav navbar-collapse collapse" id="collapsingNavbar">
+        <li class="nav-item">
+          <%= link_to 'Menu', '/menu', :class => "nav-link" %>
+        </li>
+             <li class="nav-item">
+          <%= link_to 'News', '/posts', :class => "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'location', '/location', :class => "nav-link" %>
+        </li>
+         <li class="nav-item">
+          <%= link_to 'Contact', '/contact', :class => "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'To-Go Orders', '/to_go_orders', :class => "nav-link" %>
+        </li>
+      </ul>
+</div>
     </div>
+  </nav>
+
+
+
+    <!--mobile menu -->
+    <!--
+<div>
+  <ul class="nav navbar-collapse collapse pull-right hidden-md-up" id="collapsingNavbar">
+     <li class="nav-item">
+        <%= link_to 'filler', '/', :class => "nav-link" %>
+      </li>
+           <li class="nav-item">
+        <%= link_to 'filler', '/', :class => "nav-link" %>
+      </li>
+     <li class="nav-item">
+        <%= link_to 'filler', '/', :class => "nav-link" %>
+      </li>
+  </ul>
+</div>
+ -->
+<!--end mobile menu-->
+
+
+
     <!-- Nav for small screens -->
-    <div class="container-fluid no-padding">
+    <div class="hidden-xs-up container-fluid no-padding">
       <div class="hidden-md-up">
         <!-- Navbar Header -->
         <div class="navbar-header">
@@ -54,5 +104,5 @@
         </div>
       </div>
     </div> -->
-  </nav>
+
 

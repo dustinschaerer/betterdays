@@ -31,3 +31,15 @@
 .bg-gray {
   background-color: #BBC4CF;
 }
+
+.navbar-toggler {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #FFFFFF;
+  color: #D92329;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+  outline:none;
+}

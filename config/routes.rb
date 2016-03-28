@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   authenticated :admin_user do
     root :to => 'admin/dashboard#index', :as => "authenticated_admin_root"
   end
+
   devise_for :users
   authenticated :user do
     root :to => 'static_pages#home', :as => "authenticated_root"
