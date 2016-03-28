@@ -7,8 +7,8 @@ h1 {font-family: 'Teko', sans-serif;color:#D92329;font-size:50px;font-weight: 70
 h2 {font-family: 'Teko', sans-serif;color:#D92329;font-size:38px;font-weight: 700;}
 p {font-family: 'Monda', sans-serif;color:#2d3035;}
 .header-text {font-family: 'Open Sans', sans-serif;color:#FFFFFF; font-weight: 700;}
-.footer {font-family: 'Teko', sans-serif;color:#2d3035; background:#FFF; font-size: 22px;
-text-shadow: 0px 1px 1px #333;}
+// .footer {font-family: 'Teko', sans-serif;color:#2d3035; background:#FFF; font-size: 22px;text-shadow: 0px 1px 1px #333; border-top: solid 2px #fff; box-shadow: 0 0 0 2px #D92329;}
+.footer {font-family: 'Teko', sans-serif;color:#2d3035; background:#FFF; font-size: 22px;text-shadow: 0px 1px 1px #666; border-top: solid 2px #fff; box-shadow: 0 0 0 2px #D92329;}
 
 .nav-link {font-family: 'Teko', sans-serif;color:#D92329;font-weight: 700;text-shadow: none;}
 
@@ -31,10 +31,18 @@ hr.separator {border:0; height:1px; background:#bda881;}
   min-height: 100%;
   margin-bottom: 150px;
 }
+
 .container-main {
-  margin-top: 146px;
+  margin-top: 90px;
   min-height: 100%;
   margin-bottom: 150px;
+}
+@media (min-width: 992px) {
+  .container-main {
+    margin-top: 146px;
+    // min-height: 100%;
+    // margin-bottom: 150px;
+  }
 }
 .text-white {
   color: #FFFFFF;
