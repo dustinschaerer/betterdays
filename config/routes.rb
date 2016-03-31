@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :sides
+  resources :meats
+  resources :menu_items
+  resources :categories
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   authenticated :admin_user do

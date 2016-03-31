@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @category.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @category.price %>
+</p>
+
+<p>
+  <strong>Sort:</strong>
+  <%= @category.sort %>
+</p>
+
+<p>
+  <strong>Footer description:</strong>
+  <%= @category.footer_description %>
+</p>
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

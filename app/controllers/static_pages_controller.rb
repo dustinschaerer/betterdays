@@ -10,6 +10,8 @@ class StaticPagesController < ApplicationController
   end
 
   def menu
+    @meats = MenuItem.where(category_id: 1).order(sort: :asc)
+    @sides = Side.all
   end
 
   def to_go_orders

@@ -27,11 +27,18 @@ a:hover, a:focus { color: #D92329; }
 .no-padding {padding:0}
 hr.separator {border:0; height:1px; background:#bda881;}
 
+
+
 .wrapper {
   min-height: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 450px;
 }
-
+@media (min-width: 768px) {
+  .wrapper {
+    min-height: 100%;
+    margin-bottom: 150px;
+  }
+}
 .container-main {
   margin-top: 90px;
   min-height: 100%;

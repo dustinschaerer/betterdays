@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @meat.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @meat.price %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @meat.description %>
+</p>
+
+<%= link_to 'Edit', edit_meat_path(@meat) %> |
+<%= link_to 'Back', meats_path %>
