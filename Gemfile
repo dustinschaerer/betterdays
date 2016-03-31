@@ -85,6 +85,5 @@ group :test do
   gem "webmock"
 end
 
-group :staging, :production do
-  gem "rack-timeout"
-end
+gem "rack-timeout"
+gem 'puma'
