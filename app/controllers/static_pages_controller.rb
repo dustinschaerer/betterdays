@@ -1,4 +1,7 @@
 class StaticPagesController < ApplicationController
+
+  caches_page :menu
+
   def home
     @posts = Post.all
   end
@@ -10,7 +13,7 @@ class StaticPagesController < ApplicationController
   end
 
   def menu
-    @meats = MenuItem.where(category_id: 1).order(sort: :asc)
+    @meats = Meat.order(sort: :asc)
     @sides = Side.all
   end
 

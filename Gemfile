@@ -87,3 +87,4 @@ end
 
 gem "rack-timeout"
 gem 'puma'
+gem 'actionpack-page_caching'
