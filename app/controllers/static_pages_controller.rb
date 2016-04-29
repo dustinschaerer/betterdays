@@ -1,7 +1,5 @@
 class StaticPagesController < ApplicationController
 
-  caches_page :menu
-
   def home
     @posts = Post.all
   end
@@ -18,7 +16,6 @@ class StaticPagesController < ApplicationController
   end
 
   def to_go_orders
-
   end
 
 end
