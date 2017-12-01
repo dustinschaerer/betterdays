@@ -1,2 +1,2 @@
-class Meat < ActiveRecord::Base
+class Meat < ApplicationRecord
 end

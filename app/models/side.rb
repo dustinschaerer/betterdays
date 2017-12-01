@@ -1,2 +1,2 @@
-class Side < ActiveRecord::Base
+class Side < ApplicationRecord
 end
