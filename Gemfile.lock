@@ -114,7 +114,7 @@ GEM
     factory_girl_rails (4.9.0)
       factory_girl (~> 4.9.0)
       railties (>= 3.0.0)
-    ffi (1.9.18)
+    ffi (1.11.1)
     flutie (2.0.0)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
