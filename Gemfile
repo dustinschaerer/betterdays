@@ -53,7 +53,7 @@ gem "newrelic_rpm", ">= 3.9.8"
 gem "simple_form"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
-gem 'bootstrap', '4.0.0.alpha3'
+gem 'bootstrap', '4.1.3'
 gem 'bootstrap_form'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
