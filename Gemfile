@@ -87,7 +87,7 @@ group :test do
 end
 
 gem "rack-timeout"
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.12'
 gem 'actionpack-page_caching'
 
 # use redis to run Action Cable in production
