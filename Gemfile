@@ -59,7 +59,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
 end
 gem 'font-awesome-rails'
-gem 'devise', '4.4.3'
+gem 'devise', '4.7.1'
 gem 'activeadmin'
 
 
