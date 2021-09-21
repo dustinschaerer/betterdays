@@ -3,60 +3,59 @@
   <div class="row">
     <div class="col-sm-12">
       <h1 class="menu-header">Menu</h1>
+      <center>
+      <h4>All Prices Listed are with <u>Tax Included!</u></h4>
+      </center>
+
     </div>
   </div>
 
   <div class="row m-t-20">
     <div class="col-xs-12 col-md-offset-2 col-md-8">
       <h2>Better Meats</h2>
+      <div style="text-align: center;margin-bottom: 10px;">* Each order comes with 4oz of your favorite Better Sauce</div>
       <div class="row">
           <div class="col-xs-12">
-            <span class="pull-left">One Pint Pulled Pork BBQ</span>   <span class="pull-right">$9.11</span>
+            <span class="pull-left">One Pint Pulled Pork BBQ</span>   <span class="pull-right">$11.00</span>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <span class="pull-left">One Half Pint Pulled Pork BBQ - <i>New!</i></span>   <span class="pull-right">$4.56</span>
+            <span class="pull-left">One Half Pint Pulled Pork BBQ</span>   <span class="pull-right">$5.50</span>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <span class="pull-left">One Pint Pulled Chicken BBQ</span>   <span class="pull-right">$9.11</span>
+            <span class="pull-left">One Pint Pulled Chicken BBQ</span>   <span class="pull-right">$11.00</span>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <span class="pull-left">One Pint Pulled Turkey  BBQ</span>   <span class="pull-right">$9.11</span>
+            <span class="pull-left">One Pint Pulled Turkey  BBQ</span>   <span class="pull-right">$11.00</span>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <span class="pull-left">One Pint Sliced Brisket</span>   <span class="pull-right">$11.85</span>
+            <span class="pull-left">One Pint Sliced Brisket</span>   <span class="pull-right">$14.00</span>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <span class="pull-left">Hickory Smoked Chicken Wings</span>   <span class="pull-right">$0.91 each</span>
+            <span class="pull-left">Hickory Smoked Chicken Wings</span>   <span class="pull-right">$1.50 each</span>
+            <br> <div style="text-align: center;">* Please Call Ahead on Wing Orders of 100 or more.</div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <span class="pull-left">100 Hickory Smoked Chicken Wings</span>   <span class="pull-right">$82.00</span>
-                <br> <div style="text-align: center;">* Please Call Ahead on Wing Orders of 100 or more.</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <span class="pull-left">1/2 Rack of Spare Ribs</span>   <span class="pull-right">11.85</span>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <span class="pull-left">Whole Spare Ribs</span>   <span class="pull-right">22.78</span>
-          </div>
-        </div>
-      <div style="text-align: center;">* Each order comes with 4oz of your favorite Better Sauce</div>
 
+        <div class="row">
+          <div class="col-xs-12">
+            <span class="pull-left">1/2 Rack of Spare Ribs</span>   <span class="pull-right">13.50</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span class="pull-left">Whole Spare Ribs</span>   <span class="pull-right">27.00</span>
+          </div>
+        </div>
     </div>
   </div>
 
@@ -65,12 +64,12 @@
       <h2>Better Sandwiches</h2>
       <div class="row">
         <div class="col-xs-12">
-          <span class="pull-left">Pulled Pork</span>   <span class="pull-right">Small $2.73 &nbsp;&nbsp;&nbsp; Large $4.56 &nbsp;&nbsp;&nbsp; 3 Sliders $4.56</span><br />
-          <span class="pull-left">Pulled Chicken</span>   <span class="pull-right">$4.56 &nbsp;&nbsp;&nbsp; 3 Sliders $5.47</span><br />
-          <span class="pull-left">Pulled Turkey</span>   <span class="pull-right">$4.56 &nbsp;&nbsp;&nbsp; 3 Sliders $5.47</span><br />
-          <span class="pull-left">Sliced Brisket</span>   <span class="pull-right">$7.29</span><br />
-          <div style="text-align: center;">* Add Lots of Cheese $0.91; Ask for Cole Salw, Pickles, or Mayo</div
-gmail>        </div>
+          <span class="pull-left">Pulled Pork</span>   <span class="pull-right">Small $3.50 &nbsp;&nbsp;&nbsp; Large $5.50 &nbsp;&nbsp;&nbsp; 3 Sliders $5.50</span><br />
+          <span class="pull-left">Pulled Chicken</span>   <span class="pull-right">$5.50 &nbsp;&nbsp;&nbsp; 3 Sliders $6.50</span><br />
+          <span class="pull-left">Pulled Turkey</span>   <span class="pull-right">$5.50 &nbsp;&nbsp;&nbsp; 3 Sliders $6.50</span><br />
+          <span class="pull-left">Sliced Brisket</span>   <span class="pull-right">$8.50</span><br />
+          <div style="text-align: center;">* Add Lots of Cheese $1.00; Ask for Cole Salw, Pickles, or Mayo</div>
+        </div>
       </div>
     </div>
   </div>
@@ -79,11 +78,9 @@ gmail>        </div>
     <div class="col-xs-12 col-md-offset-2 col-md-8">
       <h2>Sides</h2>
       <div style="text-align:center;">
-      <% @sides.each do |side| %>
-        <div><%= side.name %></div>
-      <% end %>
-      <br /><span class="">Individual $1.82 &nbsp;&nbsp;&nbsp; Pint $3.65 &nbsp;&nbsp;&nbsp; Quart  $7.29 &nbsp;&nbsp;&nbsp; Gallon $27.33</span>
-    </div>
+        Baked Beans with BBQ<br>Cole Slaw<br>Green Beans<br>Macaroni and Cheese<br>Mustard Potato Salad<br>Turnip Greens
+        <br /><span class="">Individual $2.00 &nbsp;&nbsp;&nbsp; Pint $4.00 &nbsp;&nbsp;&nbsp; Quart  $8.00 &nbsp;&nbsp;&nbsp; Gallon $30.00</span>
+      </div>
     </div>
   </div>
 
@@ -93,9 +90,9 @@ gmail>        </div>
         <h4>Pork, Chicken or Turkey</h4>
         <p>Chips, Choice of Meats, Cheese, Jalapeno, Better Sauce, Green Onion & Grape Tomato. Sour cream on the side.</p>
         <div class="center-block item-pricing" style="text-align: center;">
-          Small  $6.38  Large $10.93<br />
-          <i>Make Better with Brisket</i><br />
-          Small  $0.91  Large $1.82<br />
+          Small  $7.50  Large $13.00<br />
+          <i>Make it Better with Brisket</i><br />
+          Small $1.00  Large $2.00<br />
         </div>
 
       </div>
@@ -107,9 +104,9 @@ gmail>        </div>
         <h4>Pork, Chicken or Turkey</h4>
         <p>Hickory Baked Potato, Meat, Cheese, Green Onion & Better Sauce. Bacon Bits, Sour Cream &amp; Butter on the side.</p>
         <div class="center-block item-pricing" style="text-align: center;">
-          Small  $6.38  Large $10.93<br />
+          Small  $7.50 Large $13.00<br />
           <i>Make Better with Brisket</i><br />
-          Small  $0.91  Large $1.82<br />
+          Small  $1.00  Large $2.00<br />
         </div>
       </div>
   </div>
@@ -118,71 +115,71 @@ gmail>        </div>
       <div class="col-xs-12 col-md-offset-2 col-md-8">
         <h2>BBQ Plates</h2>
         <p>Generous portion of BBQ and your choice of 2 sides.<br />Bun, Pickle Spear and Better Sauce on the side.</p>
-        <span class="pull-left">Pork</span>   <span class="pull-right">$9.11</span><br />
-        <span class="pull-left">Chicken</span>   <span class="pull-right">$9.11</span><br />
-        <span class="pull-left">Turkey</span>   <span class="pull-right">$9.11</span><br />
-        <span class="pull-left">Brisket</span>   <span class="pull-right">$11.93</span><br />
-        <span class="pull-left">1/2 Rack Spare Rib</span>   <span class="pull-right">$14.58</span><br />
+        <span class="pull-left">Pork</span>   <span class="pull-right">$11.00</span><br />
+        <span class="pull-left">Chicken</span>   <span class="pull-right">$11.00</span><br />
+        <span class="pull-left">Turkey</span>   <span class="pull-right">$11.00</span><br />
+        <span class="pull-left">Brisket</span>   <span class="pull-right">$13.00</span><br />
+        <span class="pull-left">1/2 Rack Spare Rib</span>   <span class="pull-right">$17.00</span><br />
       </div>
   </div>
 
   <div class="row m-t-20">
       <div class="col-xs-12 col-md-offset-2 col-md-8">
-        <h2>Better Family Pack</h2>
-        <p><span class="pull-left">2 Pints of Pork, 2 Pint Sides, 8oz of Sauce, 8 Pack of Buns</span>  <span class="pull-right" style="text-align: right;">$28.25</span></p>
+        <h2>Better Family Packs</h2>
+        <p><span class="pull-left">1 Rack of Ribs, 2 Pint Sides, 8oz of Sauce, 1/2 Gal. Tea or Lemonade</span>  <span class="pull-right" style="text-align: right;">$38.00</span></p>
+        <p><span class="pull-left">2 Pints of Pork, 2 Pint Sides, 8oz of Sauce, 8 Pack of Buns</span>  <span class="pull-right" style="text-align: right;">$33.00</span></p>
+        <p><span class="pull-left">1 Pint of Pork, 2 Pint Sides, 4oz of Sauce, 8 Pack of Buns</span>  <span class="pull-right" style="text-align: right;">$22.00</span></p>
       </div>
   </div>
 
   <div class="row m-t-20">
       <div class="col-xs-12 col-md-offset-2 col-md-8">
         <h2>Drinks</h2>
-        <p><span class="pull-left">Proudly serving Coca-Cola Products</span>  <span class="pull-right" style="text-align: right;">20oz - $1.82<br />2-Liter - $2.73</span></p>
+        <p><span class="pull-left">Proudly serving Coca-Cola Products</span>  <span class="pull-right" style="text-align: right;">20oz - $2.00<br />2-Liter - $3.00</span></p>
       </div>
   </div>
   <div class="row m-t-20">
       <div class="col-xs-12 col-md-offset-2 col-md-8">
         <h2>Tea</h2>
-         <p><span class="pull-left">Sweet Tea</span>  <span class="pull-right" style="text-align: right;">1/2 Gallon - $2.73<br />Gallon - $4.56</span></p>
+         <p><span class="pull-left">Sweet Tea</span>  <span class="pull-right" style="text-align: right;">1/2 Gallon - $3.00<br />Gallon - $5.00</span></p>
       </div>
   </div>
   <div class="row m-t-20">
       <div class="col-xs-12 col-md-offset-2 col-md-8">
         <h2>Breads</h2>
-         <p><span class="pull-left">8 pack of Hamburger Buns</span>  <span class="pull-right" style="text-align: right;">$2.73</span></p>
+         <p><span class="pull-left">8 pack of Hamburger Buns</span>  <span class="pull-right" style="text-align: right;">$3.00</span></p>
       </div>
   </div>
   <div class="row m-t-20">
       <div class="col-xs-12 col-md-offset-2 col-md-8">
         <h2>Sauces</h2>
         <p>Alabama White, Carolina Gold Mustard, House Vinegar, KC Sweet & TN Bold</p>
-        <p style="text-align:center;">4oz - $0.91<br />8oz - $1.82</p>
+        <p style="text-align:center;">4oz - $1.00<br />8oz - $2.00</p>
       </div>
   </div>
   <div class="row m-t-20">
       <div class="col-xs-12 col-md-offset-2 col-md-8">
         <h2>Extras</h2>
-        <span class="pull-left">Chips</span>  <span class="pull-right" style="text-align: right;">$0.91</span><br />
-        <span class="pull-left">Brownie</span>  <span class="pull-right" style="text-align: right;">$2.73</span><br />
-        <span class="pull-left">Dog Treat</span>  <span class="pull-right" style="text-align: right;">$0.91</span><br />
+        <span class="pull-left">Chips</span>  <span class="pull-right" style="text-align: right;">$1.00</span><br />
+        <span class="pull-left">Brownie</span>  <span class="pull-right" style="text-align: right;">$2.00</span><br />
+        <span class="pull-left">Dog Treat</span>  <span class="pull-right" style="text-align: right;">$1.00</span><br />
       </div>
   </div>
     <div class="row m-t-20">
       <div class="col-xs-12 col-md-offset-2 col-md-8">
         <h2>Seasoning</h2>
-        <p><span class="pull-left">Better Days House Seasoning 4oz</span>  <span class="pull-right" style="text-align: right;">$2.73</span></p>
+        <p><span class="pull-left">Better Days House Seasoning 4oz</span>  <span class="pull-right" style="text-align: right;">$3.00</span></p>
       </div>
   </div>
 
   <div class="row m-t-20">
-      <div class="col-xs-12 col-md-offset-2 col-md-8">
-        <h2>Hickory Bundle</h2>
-        <p><span class="pull-left">The same hickory wood we use in house.</span>  <span class="pull-right" style="text-align: right;">$5.47</span></p>
-      </div>
+    <div class="col-xs-12 col-md-offset-2 col-md-8">
+      <h2>Hickory Bundle</h2>
+      <p><span class="pull-left">The same hickory wood we use in house.</span>  <span class="pull-right" style="text-align: right;">$6.00</span></p>
+    </div>
   </div>
 </div>
 <br><br>
-
-
 
   <div class="row">
     <div class="col-sm-6 col-md-3 no-gutter">
